@@ -1,2 +1,2 @@
-# CSE110 Lab 2
-Link to github page: https://khushijpatel.github.io/CSE110Lab2/
+# CSE110 Lab 3
+Link to github page: https://khushijpatel.github.io/sp23-cse110-lab3
