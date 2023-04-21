@@ -125,3 +125,25 @@ div {
     background-color: palevioletred;
     width: 70em;
 }
+
+/* CSS selectors */
+div ~ span {
+    text-align: right;
+}
+
+li li {
+    text-align: left;
+    text-indent: 0.25in;
+}
+
+p.names{
+    font-family: "Times New Roman", Times, serif;
+}
+
+div + p {
+    background-color: brown;
+}
+
+#social > li {
+    color:gold;
+}
