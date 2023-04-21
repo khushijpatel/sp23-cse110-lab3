@@ -2,27 +2,33 @@
 <html lang="en">
   <head>
     <title>Events Team</title>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <!-- <link rel="icon" type="image/png" href="/images/favicon.png"> -->
+    <link rel="stylesheet" href="main.css">
     <meta name="author" content="Khushi Patel">
   </head>
   <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="http://acmurl.com/calendar">ACM Calendar</a>
+    </nav>
     <main>
     <h1>ACM Events Team Meeting</h1>
     <h2>April 12, 2023</h2>
     <section>
-        <h3>Navigate to ACM Calendar: </h3>
-            <nav>
-            <a href="http://acmurl.com/calendar">ACM Calendar</a>
-            </nav>
+        <div>
+            <h3>Purpose:</h3>
+                <p>Check-Ins <span class="lh"></span>  All-Hands</p>
+        </div>
     </section>
     <section>
-        <h3>Purpose:</h3>
-        <p>Check-Ins</p>
+        <div>
+            <h3>Attendance:</h3>
+                <p class="names">Nishant, Connie, Connor, Nikhil, Khushi, Anthony, Nolan, Brandon, Murou, Victor</p>
+        </div>
     </section>
-    <section>
-        <h3>Attendance:</h3>
-            <p>Nishant, Connie, Connor, Nikhil, Khushi, Anthony, Nolan, Brandon, Murou, Victor</p>
-    </section>
+    <div class="min">
+        This took 15 minutes.
+    </div>
     <section>
             <div class="agenda">
             <h3>Agenda: </h3>
@@ -66,8 +72,9 @@
                             </li></ul>
                         </li>
                     </ul>
+                    <section class="container">
                             <img src="https://lh3.googleusercontent.com/nJMbWzrBeQevhBEM7Dwxer-VtnUR595-L7zMakFiBp6GvgW4kW9A0-qcH4byvt3tddzIQ5n4OqkITNgM3qKgKvpuAPRpp09iZQvepNjVG1IkvsSCo5Ww_G0X-DRo3h7MQTs1-M4rSw_wpQvCu-_7qyE" alt="Emoji" width="250"><br>
-
+                    </section>
                             <img src="https://images.ctfassets.net/zsv3d0ugroxu/2ROy1oxCR4QOZvPJrRVEUl/e157615cb8ff8efde57ebd5fd91b380a/JWM_BoardView.png" alt="Jira" width="500"><br>
                     <ul>
                         <li>Activites during workshops are set</li>
@@ -77,6 +84,9 @@
             </ul>
         </div>
     </section>
+    <div id="min-div">
+        This took 35 minutes.
+    </div>
     <section>
         <div class="UnfinishedBusiness">
             <h3>Unfinished Business: </h3>
@@ -84,7 +94,7 @@
                     <li>Pending Discussions from last meeting:
                         <ol>
                             <li>Team social ideas
-                                <ol>
+                                <ol class="social">
                                     <li>Make dinner together</li>
                                     <li>Bowling</li>
                                     <li>Concert</li>
@@ -102,6 +112,9 @@
                 </ul>
         </div>
     </section>
+    <div id="second-div">
+        This took 25 minutes.
+    </div>
     <hr>
     <section>
         <div class="New Business">
@@ -135,20 +148,19 @@
                             </li>
                         </ul>
                     </li>
-                    <li>Activity during workshops:
-                        
-                            <ul><li>Preview video of activity at Hack.py event:</li></ul>
-                            <video width="320" height="240" controls>
-                                <source src="resources/30SecVideo.mp4" type="video/mp4">
-                                Please check your browser for video compatibility.
-                            </video><br>
-                        
+                    <!-- <li>Activity during workshops:
+                            <division>
+                                <ul><li>Preview video of activity at Hack.py event:</li></ul>
+                                <video id="vid" width="100" height="400" controls>
+                                    <source src="resources/30SecVideo.mp4" type="video/mp4">
+                                    Please check your browser for video compatibility.
+                                </video><br>
+                            </division>
                             <ul><li>And here's just the audio of it:</li></ul>
                             <audio controls>
                               <source src="resources/30SecAudio.mp3" type="audio/mpeg">
                             </audio>
-                        
-                    </li>
+                    </li> -->
                 </ul>
                 <h3>Board Applications</h3>
                     <details>
@@ -187,15 +199,30 @@
             </fieldset>     
         </form>
     </section>
+    <div id="grid">
+        <h4>Meeting Audio</h4>
+        <audio controls>
+          <source src="resources/30SecAudio.mp3" type="audio/mp3">
+        </audio>
+  
+        <h4>Meeting Video</h4>
+        <video id="vid" controls>
+          <source src="resources/30SecVideo.mp4" type="video/mp4">
+        </video>
+    </div>
     <section>
-        <h1>Acknowledge</h1>
+        <h1 style="color:red;text-align:center;">Acknowledge</h1>
         <form>
             <p><label for="review">Type a sentence acknowledging you read or participated in the meeting:</label></p>
             <textarea id="review" name="review" rows="4" cols="50">I acknowledge that I was present in the meeting and participated in the meeting by providing my updates.</textarea>
             <br>
-            <input type="submit" value="Submit">
+            <!--<input type="submit" value="Submit"> -->
+            <p><button type="submit">Submit</button></p>
         </form>
     </section>
     </main>
+    <footer>
+      Copyright Khushi Patel, 2023
+    </footer>
   </body>
 </html>
